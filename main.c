@@ -121,7 +121,7 @@ void do_and_save(char *opt, char *src, char *dest) {
 bool file_exists(char* path) {
     bool result = false;
     FILE* file;
-    if(file = fopen(path, "r")) {
+    if ((file = fopen(path, "r"))) {
         fclose(file);
         result = true;
     }
